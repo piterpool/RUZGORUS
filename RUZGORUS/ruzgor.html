@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleruzgor.css">
+    <link rel="stylesheet" href="contact.html">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <title>RUZGORUS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <div class="header">
+    <a href="#default" class="logo">RUZGORUS</a>
+    <div class="header-right">
+      <a href="contact.html">Contact Us</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+    <mahsulotlar class="mahsulotlar">
+        <div class="non">
+            <img id="non" src="https://th.bing.com/th/id/OIP.07DSmcZjpiikJjp8tw_EugHaE6?pid=ImgDet&rs=1" alt="non rasmi" class="non-image'">
+            <div class="quantity">
+              Soni: <span id="quantity">0</span>
+            </div>
+            <div class="buttons">
+              <button class="btn" onclick="decreaseQuantity()">-</button>
+              <button class="btn" onclick="increaseQuantity()">+</button>
+            </div>
+            <div class="price">
+              Narxi: <span id="price">3000</span> so'm
+            </div>
+            <div class="total-price">
+              Jami: <span id="total-price">0</span> so'm
+            </div>
+        </div>
+        <script>
+             var quantityElement = document.getElementById("quantity");
+             var priceElement = document.getElementById("price");
+             var totalPriceElement = document.getElementById("total-price");
+
+             var quantity = 0;
+             var price = 3000;
+
+             function updateTotalPrice() {
+               var totalPrice = quantity * price;
+               totalPriceElement.textContent = totalPrice;
+             }
+
+            function increaseQuantity() {
+              quantity++;
+              quantityElement.textContent = quantity;
+              updateTotalPrice();
+            }
+        
+            function decreaseQuantity() {
+              if (quantity > 0) {
+                quantity--;
+                quantityElement.textContent = quantity;
+                updateTotalPrice();
+              }
+            }
+        </script> 
+        <div class="tuxum">
+                    <img id="tuxum" src="https://www.washingtonpost.com/resizer/1RhnmRzobv_b5lzu2YIz381sV8s=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/4ZLH33AYAAI6TOHGKZYZBQX5BA.jpg" alt="non rasmi" class="non-image'">
+                    <div class="quantity2">
+                      Soni: <span id="quantity2">0</span>
+                    </div>
+                    <div class="buttons">
+                      <button class="btn-tuxum" onclick="decreaseQuantity2()">-</button>
+                      <button class="btn-tuxum" onclick="increaseQuantity2()">+</button>
+                    </div>
+                    <div class="price2">
+                      Narxi: <span id="price2">1300</span> so'm
+                    </div>
+                    <div class="total-price2">
+                      Jami: <span id="total-price2">0</span> so'm
+                    </div>
+        </div>
+        <script>
+            var quantity2Element = document.getElementById("quantity2");
+            var price2Element = document.getElementById("price2");
+            var totalPrice2Element = document.getElementById("total-price2");
+        
+            var quantity2 = 0;
+            var price2 = 1300;
+        
+            function updateTotalPrice2() {
+              var totalPrice2 = quantity2 * price2;
+              totalPrice2Element.textContent = totalPrice2;
+            }
+        
+            function increaseQuantity2() {
+              quantity2++;
+              quantity2Element.textContent = quantity2;
+              updateTotalPrice2();
+            }
+        
+            function decreaseQuantity2() {
+              if (quantity2 > 0) {
+                quantity2--;
+                quantity2Element.textContent = quantity2;
+                updateTotalPrice2();
+              }
+            }
+        </script>
+        <div class="sut">
+            <img id="sut" src="https://th.bing.com/th/id/R.0f0ecfa3ffe260b2e2009900f1044e0c?rik=%2fiDnA1oVu9TW1A&riu=http%3a%2f%2fabcsupermarket.af%2fabc%2fimage%2fcache%2fcatalog%2fBurger%2fstkmF5S-wGIiAPJ-500x500.jpg&ehk=2MLkouk3vwELYzbXaFIrTAx46bNBwnqv2Xn3PeAsvvA%3d&risl=&pid=ImgRaw&r=0" alt="non rasmi" class="non-image'">
+            <div class="quantity3">
+              Soni: <span id="quantity3">0</span>
+            </div>
+            <div class="buttons">
+              <button class="btn-sut" onclick="decreaseQuantity3()">-</button>
+              <button class="btn-sut" onclick="increaseQuantity3()">+</button>
+            </div>
+            <div class="price3">
+              Narxi: <span id="price3">12000</span> so'm
+            </div>
+            <div class="total-price3">
+              Jami: <span id="total-price3">0</span> so'm
+            </div>
+        </div>
+        <script>
+    var quantity3Element = document.getElementById("quantity3");
+    var price3Element = document.getElementById("price3");
+    var totalPrice3Element = document.getElementById("total-price3");
+
+    var quantity3 = 0;
+    var price3 = 12000;
+
+    function updateTotalPrice3() {
+      var totalPrice3 = quantity3 * price3;
+      totalPrice3Element.textContent = totalPrice3;
+    }
+
+    function increaseQuantity3() {
+      quantity3++;
+      quantity3Element.textContent = quantity3;
+      updateTotalPrice3();
+    }
+
+    function decreaseQuantity3() {
+      if (quantity3 > 0) {
+        quantity3--;
+        quantity3Element.textContent = quantity3;
+        updateTotalPrice3();
+      }
+    }
+        </script>
+        <div class="kartoshka">
+            <img id="kartoshka" src="https://th.bing.com/th/id/OIP._mihyddpCy_ShVe8uG6exAHaF7?pid=ImgDet&rs=1" alt="non rasmi" class="non-image'">
+            <div class="quantity4">
+              Soni: <span id="quantity4">0</span>
+            </div>
+            <div class="buttons">
+              <button class="btn-kartoshka" onclick="decreaseQuantity4()">-</button>
+              <button class="btn-kartoshka" onclick="increaseQuantity4()">+</button>
+            </div>
+            <div class="price4">
+              Narxi: <span id="price4">7000</span> so'm
+            </div>
+            <div class="total-price4">
+              Jami: <span id="total-price4">0</span> so'm
+            </div>
+        </div>
+        <script>
+    var quantity4Element = document.getElementById("quantity4");
+    var price4Element = document.getElementById("price4");
+    var totalPrice4Element = document.getElementById("total-price4");
+
+    var quantity4 = 0;
+    var price4 = 7000;
+
+    function updateTotalPrice4() {
+      var totalPrice4 = quantity4 * price4;
+      totalPrice4Element.textContent = totalPrice4;
+    }
+
+    function increaseQuantity4() {
+      quantity4++;
+      quantity4Element.textContent = quantity4;
+      updateTotalPrice4();
+    }
+
+    function decreaseQuantity4() {
+      if (quantity4 > 0) {
+        quantity4--;
+        quantity4Element.textContent = quantity4;
+        updateTotalPrice4();
+      }
+    }
+        </script>
+    </mahsulotlar>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--  <ruzgor>
+        <div class="ruzgor">
+            <span id="ruzgor">0</span> so'm
+        </div>
+        <script>
+            var totalPriceElement = document.getElementById("total-price");
+            var totalPrice2Element = document.getElementById("total-price2");
+            var totalPrice3Element = document.getElementById("total-price3");
+            var totalPrice4Element = document.getElementById("total-price4");
+
+            var totalPrice = parseInt(totalPriceElement.textContent);
+            var totalPrice2 = parseInt(totalPrice2Element.textContent);
+            var totalPrice3 = parseInt(totalPrice3Element.textContent);
+            var totalPrice4 = parseInt(totalPrice4Element.textContent);
+
+            var sum = val(totalPrice) + val(totalPrice3)+ val(totalPrice4);
+
+            var ruzgor = document.getElementById("ruzgor");
+            ruzgor.textContent = "Sum of total prices: " + sum;
+            
+            
+        </script>
+    </ruzgor>-->
+    <h1 id="fake">Sizning Ro'zg'oringiz <span style="color: blue; font-style:italic; background-color: black;">38000</span> so'm</h1>
+
+  </body>
+</html>`
